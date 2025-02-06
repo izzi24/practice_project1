@@ -42,7 +42,7 @@ export default function Header() {
         <p className="text-white text-2xl font-bold  mt-3  lg:grid">Blog</p>
       </div>
       <div className="  mt-4">
-        <ul className=" gap-5 ml-auto w-fit sm:auto lg:flex text-white">
+        <ul className=" gap-5 ml-auto w-fit hidden lg:flex text-white">
           <p
             onClick={() => {
               logout();
