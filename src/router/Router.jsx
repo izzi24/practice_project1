@@ -1,7 +1,7 @@
 import React from 'react'
 import {BrowserRouter, Route, Routes,Link } from 'react-router-dom'
 import HomePage from '../pages/HomePage'
-import NewsContent from '../pages/newsContent'
+import NewsContent from '../pages/NewsContent'
 import AboutPage from '../pages/AboutPage'
 import SignPage from '../pages/SignPage'
 import SinglePage from '../pages/SinglePage'
