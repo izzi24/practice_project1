@@ -4,7 +4,7 @@ import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
-import NewsContent from './pages/newsContent'
+import NewsContent from './pages/NewsContent'
 import Router from './router/Router'
 import { ToastContainer } from 'react-toastify';
 
