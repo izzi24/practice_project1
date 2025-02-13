@@ -121,13 +121,28 @@ export default function Header() {
                 ABOUT
               </Link>
               <Link
-                className="text-white font-bold py-3 text-2xl border cursor-pointer uppercase hover:bg-gray-300"
+                className={isLoggedIn ? " text-white  font-bold   cursor-pointer border py-3 text-2xl uppercase hover:bg-gray-300 " : "hidden"}
                 to="/NewsContent"
               >
                 Add-Articule
               </Link>
+              <p
+            onClick={() => {
+              logout();
+              setIsLoggedIn(false);
+            
+              window.location.reload()
+            }}
+            className={
+              isLoggedIn
+                ? "px-6 text-xl py-2 cursor-pointer text-white  font-bold  bg-red-500"
+                : "hidden"
+            }
+          >
+            Logout
+          </p>
               <Link
-                className="text-white font-bold py-3 text-2xl border cursor-pointer uppercase hover:bg-gray-300"
+                className={isLoggedIn ? "hidden" : " py-3 text-2xl  bg-blue-500 cursor-pointer text-white hover:bg-blue-600 border rounded-md"}
                 to="/SignPage"
               >
                 Sign in
