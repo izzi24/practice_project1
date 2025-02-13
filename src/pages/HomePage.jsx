@@ -79,7 +79,7 @@ export default function HomePage() {
         </div>
        </div>
         
-        <div className="p-10 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 w-[fit] h-fit">
+        <div className="px-3 py-10 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 w-[fit] h-fit">
         
           {newsData?.map((element) => (
             // eslint-disable-next-line react/jsx-key
