@@ -1,0 +1,18 @@
+[
+    {
+        "id": "usr_dsksh!$t79ayn",
+        "username" : "emmanueljohndoe@gmail.com",
+        "password": "pass",
+        "gender": "male",
+        "location":"Abidjan",
+        "role": "admin"
+    },
+    {
+        "id": "usr_dvfdgdsctvtyhbbh!$t79ayn",
+        "username" : "abimbola@gmail.com",
+        "password": "pass",
+        "gender": "trans-female",
+        "location":"Abidjan",
+        "role": "customUser"
+    }
+]
