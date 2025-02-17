@@ -6,8 +6,9 @@ import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 export default function SignPage() {
   const [username, setUsername] = useState("");
-  const [passwd, setPasswd] = useState("");
+  let [passwd, setPasswd] = useState("");
   const navigate = useNavigate()
+  let [showPassword, setShowPassword] = useState(false)
 
   const changeUsername = (e) => {
     setUsername(e.target.value);
@@ -50,9 +51,10 @@ export default function SignPage() {
   }
   return (
     <div className="">
-      <Header />
-      <div className=" flex items-center bg-gradient-to-r from-violet-500 to-fuchsia-500 justify-center py-3 w-full">
-        <div className="bg-white text-center rounded-2xl w-[50%] h-[80vh]">
+    <Header />
+      
+      <div className=" lg:flex hidden items-center bg-gradient-to-r from-violet-500 to-fuchsia-500 justify-center py-3 w-full">
+        <div className="bg-white text-center rounded-2xl h-[75vh] w-[50%]">
           <p className="  py-4 capitalize text-3xl font-bold">welcome back!</p>
           <p className="capitalize text-2xl font-bold">login</p>
           <div className="p-2">
@@ -74,6 +76,50 @@ export default function SignPage() {
           <div className="text-end text-sm font-bold lg:px-12 sm:px-5">
             {" "}
             <p>Forget password?</p>
+          </div>
+          <div className="py-5">
+            <button onClick={handleSubmit} type="button" className="py-3 px-9 text-white rounded-xl text-xl bg-gradient-to-r from-violet-500 to-fuchsia-500">
+              Login
+            </button>
+          </div>
+          <p className="capitalize text-2xl">Or sign up using</p>
+          <div className="py-5">
+            <i className="pi pi-facebook text-blue-900 w-[50px] cursor-pointer"></i>
+            <i className="pi pi-twitter text-blue-600 w-[50px] cursor-pointer"></i>
+            <i className="pi pi-google text-red-500 w-[50px] cursor-pointer"></i>
+          </div>
+        </div>
+      </div>
+      <div className=" lg:hidden sm:block items-center px-5 bg-gradient-to-r from-violet-500 to-fuchsia-500 justify-center py-3 w-full">
+        <div className="bg-white text-center rounded-2xl w-[full]  h-[vh]">
+          <p className="  py-4 capitalize text-3xl font-bold">welcome back!</p>
+          <p className="capitalize text-2xl font-bold">login</p>
+          <div className="p-2">
+           <div>
+           <input
+              className=" border w-[90%] px-3 h-[40px] mt-5"
+              type="text"
+              placeholder="Type your username"
+              value={username}
+              onChange={(e) => changeUsername(e)}
+            />
+           </div>
+           <div className="relative">
+            <input
+              className="  border h-[40px] mt-5 px-3 w-[90%]"
+              type={showPassword ? "text" : "password"}
+              placeholder="Enter your password"
+              value={passwd}
+              onChange={(e) => changePasswd(e)}
+            />
+            <button type="button" className="absolute right-10 top-7 text-gray-400" onClick={() => setShowPassword(!showPassword)}>
+              <i className={`pi ${showPassword ? "pi-eye" : "pi-eye-slash"}`}></i>
+            </button>
+            </div>
+          </div>
+          <div className="text-end text-sm font-bold lg:px-12 sm:px-5">
+            {" "}
+            <p className="px-7">Forget password?</p>
           </div>
           <div className="py-5">
             <button onClick={handleSubmit} type="button" className="py-3 px-9 text-white rounded-xl text-xl bg-gradient-to-r from-violet-500 to-fuchsia-500">
