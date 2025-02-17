@@ -3,7 +3,7 @@ import imaA from "../images/Parach-computers-ibadan-logo-1-e1565984209812-157x49
 
 export default function Footer() {
   return (
-    <div>
+    <div className="">
       <div className=" lg:flex justify-between hidden  bg-gray-900 px-10 lg:h-[10vh] items-center">
       <div>
         <img src={imaA} alt="" />

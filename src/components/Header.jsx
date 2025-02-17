@@ -37,7 +37,7 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="grid grid-cols-[6fr_6fr] bg-gray-900  lg:h-[12vh] md:h-[auto] sm:h-[10vh] sm:auto px-10 items-center sticky top-0">
+    <div className="grid grid-cols-[6fr_6fr] bg-gray-900  z-40 lg:h-[12vh] md:h-[auto] sm:h-[10vh] px-10 items-center sticky top-0">
       <div>
         <p className="text-white text-2xl font-bold  mt-3  lg:grid">Blog</p>
       </div>

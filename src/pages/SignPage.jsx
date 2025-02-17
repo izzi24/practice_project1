@@ -48,7 +48,9 @@ export default function SignPage() {
   return (
     <div className=" ">
       <Header/>
+
       <div className=" lg:flex hidden items-center justify-center py-3 w-full">
+      
         <div className="bg-white text-center rounded-2xl h-[75vh] w-[50%]">
           <p className="  py-4 capitalize text-3xl font-bold">welcome back!</p>
           <p className="capitalize text-2xl font-bold">login</p>
@@ -100,8 +102,8 @@ export default function SignPage() {
           </div>
         </div>
       </div>
-      <div className=" lg:hidden sm:visible items-center  px-5 bg-gray-600 justify-center py-3 ">
-        <div className="bg-white text-center rounded-2xl w-[full]  ">
+      <div className=" lg:hidden sm: h-[88vh] px-5  bg-gray-600   ">
+        <div className="bg-white text-center h-[87vh]  rounded-2xl w-[full]  ">
           <p className="  py-4 capitalize text-3xl font-bold">welcome back!</p>
           <p className="capitalize text-2xl font-bold">login</p>
           <div className="p-2">
